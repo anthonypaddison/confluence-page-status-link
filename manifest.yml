@@ -1,0 +1,28 @@
+modules:
+  macro:
+    - key: page-status-link
+      resource: main
+      render: native
+      title: Page Status Link
+      description: Link to a Confluence page with its current content status.
+      layout: inline
+      config:
+        resource: macro-config
+        render: native
+        viewportSize: medium
+        title: Paste a Confluence page URL
+        openOnInsert: true
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+  - key: macro-config
+    path: src/frontend/config.jsx
+app:
+  runtime:
+    name: nodejs24.x
+  # Reference identity only. Fork owners MUST register their own app before deployment.
+  id: ari:cloud:ecosystem::app/cf73e829-df10-4123-811d-a03fa4cf47a3
+permissions:
+  scopes:
+    - read:confluence-content.summary
+    - read:page:confluence

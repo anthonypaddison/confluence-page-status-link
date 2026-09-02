@@ -1,0 +1,9 @@
+node_modules/
+.forge/
+.env
+.env.*
+.all-env
+*.pem
+*.key
+.DS_Store
+*.log

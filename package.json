@@ -1,0 +1,25 @@
+{
+  "name": "confluence-page-status-link",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Self-deployed Forge macro showing a permitted Confluence page's title, link and status.",
+  "license": "MIT",
+  "author": "Anthony Paddison",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthonypaddison/confluence-page-status-link.git"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "lint:forge": "forge lint"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "dependencies": {
+    "@forge/bridge": "^6.3.0",
+    "@forge/react": "^12.1.2",
+    "react": "^18.3.1"
+  }
+}
